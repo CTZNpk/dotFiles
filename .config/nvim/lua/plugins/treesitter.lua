@@ -11,10 +11,10 @@ return {
 
     configs.setup({
       ensure_installed = "all",
-      ignore_install = { "phpdoc" }, -- List of parsers to ignore installing
+      ignore_install = { "phpdoc", "systemverilog" }, -- List of parsers to ignore installing
       highlight = {
-        enable = true,            -- false will disable the whole extension
-        disable = { "css" },      -- list of language that will be disabled
+        enable = true,                                -- false will disable the whole extension
+        disable = { "css" },                          -- list of language that will be disabled
       },
       autopairs = {
         enable = true,

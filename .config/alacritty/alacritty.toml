@@ -27,22 +27,22 @@ background = "0x020221"
 foreground = "0xb4b4b9"
 
 [font.bold]
-family = "Hack"
+family = "IosevkaNerdFont"
 style = "Bold"
 
 [font.bold_italic]
-family = "Hack"
+family = "IosevkaNerdFont"
 style = "Bold Italic"
 
 [font.italic]
-family = "Hack"
+family = "IosevkaNerdFont"
 style = "Italic"
 
 [font.normal]
-family = "Hack"
+family = "IosevkaNerdFont"
 style = "Regular"
 
-[shell]
+[terminal.shell]
 args = ["--login"]
 program = "/bin/zsh"
 
@@ -56,3 +56,4 @@ lines = 50
 [window.padding]
 x = 5
 y = 5
+
