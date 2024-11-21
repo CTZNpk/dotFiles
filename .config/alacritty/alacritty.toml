@@ -49,8 +49,8 @@ style = "Regular"
 args = ["--login"]
 program = "/bin/zsh"
 
-[window]
-opacity = 0.7
+# [window]
+# opacity = 0.85
 
 [window.dimensions]
 columns = 350
