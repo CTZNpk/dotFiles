@@ -4,6 +4,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH=$PATH:$(go env GOPATH)/bin
+
 
 
 # export PYENV_ROOT="$HOME/.pyenv"
@@ -157,7 +159,8 @@ export PATH="$PATH:/home/haider/.local/bin"
 
 export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
 export CLASSPATH=".:/usr/share/tomcat8/lib/servlet-api.jar::/home/haider/Documents/webEngineeringCourse/ojdbc11.jar:/usr/share/tomcat8/lib/jsp-api.jar"
-
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin
 
 
 alias v='nvim'

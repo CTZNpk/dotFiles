@@ -1,0 +1,6 @@
+" Map j and k to navigate the project view
+map <C-j> :action Activate Next File<CR>
+map <C-k> :action Activate Previous File<CR>
+
+" Map jk to Escape to return to normal mode
+inoremap jk <Esc>
