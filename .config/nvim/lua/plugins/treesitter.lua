@@ -1,7 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  dependencies = { "nvim-treesitter/nvim-treesitter-textobjects", "HiPhish/rainbow-delimiters.nvim"
-  },
+  dependencies = { "nvim-treesitter/nvim-treesitter-textobjects", "HiPhish/rainbow-delimiters.nvim" },
 
   config = function()
     local status_ok, configs = pcall(require, "nvim-treesitter.configs")
@@ -11,10 +10,11 @@ return {
 
     configs.setup({
       ensure_installed = "all",
-      ignore_install = { "phpdoc", "systemverilog" }, -- List of parsers to ignore installing
+      ignore_install = { "phpdoc", "hoon" },                           -- List of parsers to ignore installing
       highlight = {
-        enable = true,                                -- false will disable the whole extension
-        disable = { "css" },                          -- list of language that will be disabled
+        enable = true,                                                 -- false will disable the whole extension
+        additional_vim_regex_highlighting = false,
+        disable = { "css" },                                           -- list of language that will be disabled
       },
       autopairs = {
         enable = true,
