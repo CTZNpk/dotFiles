@@ -133,6 +133,15 @@ return {
           native_menu = false,
         },
       })
+      -- setup vim dad bod
+      cmp.setup.filetype(
+        { "sql" }, {
+          sources = {
+            { name = "vim-dadbod-completion" },
+            { name = "buffer" },
+          }
+        }
+      )
     end,
   },
   {

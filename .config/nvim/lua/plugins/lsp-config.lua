@@ -26,17 +26,6 @@ return {
       })
       lspconfig.gopls.setup({
         capabilities = capabilities,
-        -- settings = {
-        --   gopls = {
-        --     usePlaceholders = true,
-        --     completeUnimported = true,
-        --     gofumpt = true,
-        --     analyses = {
-        --       unusedparams = true,
-        --     },
-        --     experimentalWorkspaceModule = true
-        --   },
-        -- },
       })
 
       lspconfig.ts_ls.setup({
